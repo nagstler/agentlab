@@ -2,11 +2,73 @@
 
 AgentLab is a practical, stage-by-stage learning project to **understand AI agents using LangChain**.
 
-It focuses on building from the ground up — starting with basic agents and progressively introducing tools, memory, custom prompts, and advanced agent types.
+It is not a boilerplate repo — it’s a guided, hands-on path to demystify how agents actually work, what role LangChain plays, and how to build robust multi-tool AI systems from the ground up.
 
-Each stage introduces a new capability with:
-- Its own agent and tools
-- A simple script to run and observe the behavior
+---
+
+## 🧠 What is an AI Agent?
+
+An AI Agent is not just a large language model (LLM). It is a system that:
+- Can take input (a user question)
+- Decide whether to respond directly or **act** via tools
+- Use **memory** to persist information across turns
+- Reason about **which tool** to use and when to stop
+
+Think of it as:
+> LLM + Planning + Tool Use + State Management
+
+---
+
+## 🧰 Why LangChain?
+
+LangChain provides:
+- A standard **AgentExecutor** that manages reasoning loops
+- Easy-to-register **tools** (wrapped functions)
+- Built-in support for **OpenAI tool calling**, vector stores, retrievers, memory modules, and more
+- A modular architecture to build real-world agentic applications
+
+---
+
+## 🏗️ Agent Architecture in This Repo
+
+Every agent here follows a consistent mental model:
+
+```
+[User Input] 
+    ↓
+[Prompt + Memory] 
+    ↓
+[LangChain Agent Executor]
+    ↓
+[LLM decides] —> Tool? → [Tool Call] → Back to Agent 
+    ↓
+[Final Answer]
+```
+
+Each stage adds one new capability:
+- Tool injection
+- Multi-tool reasoning
+- Conversation memory
+- Custom prompts & personas
+- Function-calling with structured input
+
+---
+
+## 🔍 Who This Is For
+
+This repo is for:
+- Developers new to LangChain or agents
+- AI builders wanting to learn how agents are wired
+- Technical folks building POCs or agent-backed APIs
+- Anyone who wants a practical, working mental model of how AI agents reason and act
+
+---
+
+## 🧪 What You’ll Find
+
+- Each stage has its own `agent`, `tool`, and `runner`
+- You can run each one independently
+- Each step builds your understanding of how agents work in real applications
 
 ---
 
