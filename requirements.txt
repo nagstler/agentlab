@@ -1,7 +1,11 @@
 langchain>=0.1.14
-langchain-core>=0.1.25
 langchain-community>=0.0.21
+langchain-core>=0.1.25
+
 langchain-openai>=0.0.2
 openai>=1.14.0
 python-dotenv>=1.0.1
 numexpr>=2.8.4
+
+chromadb>=0.4.22
+sentence-transformers>=2.2.2

@@ -157,6 +157,17 @@ Script: `run/run_agent_v5.py`
 
 ---
 
+### 🔍 Stage 6: ToolRetriever + Embedding-Based Tool Selection
+
+- Embed tool descriptions using `SentenceTransformerEmbeddings`
+- Store embeddings in a `ChromaDB` vector store
+- Dynamically filter tools by query relevance using vector similarity
+- Scale agent capability beyond a handful of tools
+
+Script: `run/run_agent_v6.py`
+
+---
+
 ## ✅ What We’ve Learned So Far
 
 - How LangChain agents work under the hood
